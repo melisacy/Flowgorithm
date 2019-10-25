@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="34"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 11:00:18 "/>
+        <attribute name="created" value="MzQ7IFBDMzQ7IDIwMTktMTAtMTg7IDA5OjAzOjI3IDsgMTU3OQ=="/>
+        <attribute name="edited" value="MzQ7IFBDMzQ7IDIwMTktMTAtMTg7IDA5OjI4OjQ0IDsgMTU4NQ=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMjU7IjExOjAwOjE4ICI7MTsyMTIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SAYI, OB, BN, Y, O, BR, UZUNLUK" type="Integer" array="False" size=""/>
+            <output expression="&quot; Be&#351; basamakl&#305; bir say&#305; giriniz.&quot;" newline="True"/>
+            <do expression="UZUNLUK!=5">
+                <input variable="SAYI"/>
+                <assign variable="UZUNLUK" expression="Len(ToString(SAYI))"/>
+                <if expression="UZUNLUK!=5">
+                    <then>
+                        <output expression="&quot;L&#252;tfen be&#351; basamakl&#305; bir say&#305; giriniz&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="OB" expression="SAYI/10000"/>
+                        <assign variable="BN" expression="(SAYI/1000)%10"/>
+                        <assign variable="Y" expression="(SAYI/100)%10"/>
+                        <assign variable="O" expression="(SAYI/10)%10"/>
+                        <assign variable="BR" expression="SAYI%10"/>
+                        <if expression="OB=BR&amp;&amp;BN=O">
+                            <then>
+                                <output expression="&quot;Girdi&#287;iniz say&#305; palindrom bir say&#305;d&#305;r&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Girdi&#287;iniz say&#305; palindrom bir say&#305; de&#287;ildir.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

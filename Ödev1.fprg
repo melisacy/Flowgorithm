@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TOSHIBA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 11:54:12 "/>
+        <attribute name="created" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjExOjQ5OjE3ICI7MjAyMA=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjExOjU0OjEyICI7MTsyMTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;1" type="Integer" array="False" size=""/>
+            <declare name="say&#305;2" type="Integer" array="False" size=""/>
+            <output expression="&quot;birsay&#305;giriniz&quot;" newline="True"/>
+            <input variable="say&#305;1"/>
+            <output expression="&quot;birsay&#305;dahagiriniz&quot;" newline="True"/>
+            <input variable="say&#305;2"/>
+            <if expression="say&#305;1&gt;say&#305;2">
+                <then>
+                    <output expression="&quot;say&#305;1b&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;say&#305;2b&#252;y&#252;kt&#252;r&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

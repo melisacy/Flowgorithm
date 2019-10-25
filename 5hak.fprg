@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="34"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 10:02:12 "/>
+        <attribute name="created" value="MzQ7IFBDMzQ7IDIwMTktMTAtMDQ7IDA5OjI1OjQ0IDsgMTU3Nw=="/>
+        <attribute name="edited" value="MzQ7IFBDMzQ7IDIwMTktMTAtMDQ7IDA5OjU3OjE1IDsgMTU4MA=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDk7IjEwOjAyOjEyICI7MjsyMTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="B, sayac, rasgele" type="Integer" array="False" size=""/>
+            <assign variable="B" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="rasgele" expression="0"/>
+            <assign variable="rasgele" expression="Random(100)"/>
+            <output expression="rasgele" newline="True"/>
+            <output expression="&quot;tahmininizi giriniz&quot;" newline="True"/>
+            <do expression="B!=rasgele&amp;&amp;sayac&lt;5">
+                <input variable="B"/>
+                <if expression="B!=rasgele">
+                    <then>
+                        <if expression="B&gt;rasgele">
+                            <then>
+                                <output expression="&quot; daha k&#252;&#231;&#252;k bir say&#305; tahmin ediniz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;daha b&#252;y&#252;k bir say&#305; tahmin ediniz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+                <output expression="5-sayac&amp;&quot; hakk&#305;n&#305;z kalm&#305;&#351;t&#305;r &quot;" newline="True"/>
+                <if expression="sayac==5&amp;&amp;rasgele!=B">
+                    <then/>
+                    <else/>
+                </if>
+            </do>
+            <if expression="sayac&lt;5">
+                <then>
+                    <output expression="&quot; say&#305;y&#305; buldunuz &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; say&#305;y&#305; bulamad&#305;n&#305;z hakk&#305;n&#305;z bitmi&#351;tir &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

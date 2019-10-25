@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="34"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-20 01:18:05 "/>
+        <attribute name="created" value="MzQ7IFBDMzQ7IDIwMTktMTAtMTE7IDA5OjA0OjU1IDsgMTU3NA=="/>
+        <attribute name="edited" value="MzQ7IFBDMzQ7IDIwMTktMTAtMTE7IDA5OjUwOjU4IDsgMTU3OA=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMjA7IjAxOjE4OjA1ICI7MTsyMTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BN, Y, O, BR, S, U, T" type="Integer" array="False" size=""/>
+            <output expression="&quot; D&#246;rt basamankl&#305; bir say&#305; giriniz. &quot;" newline="True"/>
+            <do expression="U!=4">
+                <input variable="S"/>
+                <assign variable="U" expression="Len(ToString(S))"/>
+                <if expression="U!=4">
+                    <then>
+                        <output expression="&quot; L&#252;tfen d&#246;rt basamakl&#305; bir say&#305; giriniz&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="BN" expression="S/1000"/>
+                        <assign variable="Y" expression="(S/100)%10"/>
+                        <assign variable="O" expression="(S/10)%10"/>
+                        <assign variable="BR" expression="S%10"/>
+                        <assign variable="T" expression="(BN^2)+(Y^2)+(O^2)+(BR^2)"/>
+                        <output expression="T" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

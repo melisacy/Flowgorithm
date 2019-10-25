@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TOSHIBA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 12:20:31 "/>
+        <attribute name="created" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjEyOjA3OjE0ICI7MjAxMg=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjEyOjIwOjMxICI7MTsyMTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;birsay&#305;giriniz&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <declare name="kare" type="Integer" array="False" size=""/>
+            <assign variable="kare" expression="say&#305;*say&#305;"/>
+            <output expression="kare" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

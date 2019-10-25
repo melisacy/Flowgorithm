@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TOSHIBA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-08 08:46:02 "/>
+        <attribute name="created" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDg7IjA4OjMzOjU5ICI7MjAzMQ=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDg7IjA4OjQ2OjAyICI7MTsyMTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, rasgele, tahmin" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="rasgele" expression="0"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="rasgele" expression="Random(85)"/>
+            <output expression="rasgele" newline="True"/>
+            <output expression="&quot;tahminigiriniz&quot;" newline="True"/>
+            <input variable="tahmin"/>
+            <while expression="tahmin!=rasgele">
+                <if expression="rasgele&lt;tahmin">
+                    <then>
+                        <output expression="&quot;dahak&#252;&#231;&#252;kbirde&#287;ergiriniz&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;dahab&#252;y&#252;kbirde&#287;ergiriniz&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="tahmin"/>
+                <assign variable="sayac" expression="sayac+1"/>
+            </while>
+            <output expression="rasgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;sayac&amp;&quot; seferdegiriniz! &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

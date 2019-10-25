@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TOSHIBA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 12:02:40 "/>
+        <attribute name="created" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjExOjU2OjI1ICI7MjAxNw=="/>
+        <attribute name="edited" value="VE9TSElCQTtUU0hCOzIwMTktMTAtMDI7IjEyOjAyOjQwICI7MTsyMTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;birsay&#305;giriniz&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <if expression="say&#305;&gt;0">
+                <then>
+                    <output expression="&quot;say&#305;pozitiftir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="say&#305;&lt;0">
+                        <then>
+                            <output expression="&quot;say&#305;negatiftir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="say&#305;=0">
+                                <then>
+                                    <output expression="&quot;say&#305;s&#305;f&#305;rd&#305;r&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
